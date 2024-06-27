@@ -1,38 +1,29 @@
 ---
 type: lesson
-title: Welcome to TutorialKit
+title: Nx Graph Error
 focus: /counter.js
 ---
 
-# Welcome to TutorialKit
+# Nx Graph Error
 
-Hey there, and welcome to TutorialKit 👋!
+If you run `nx graph` in the terminal it will throw this error:
 
-To kick things off, we have prepared a small demo lesson for you, where we'll dive into the concept of event handling in JavaScript. Our task is to resuscitate a lifeless counter app by introducing the crucial element of interactivity: **event listeners**.
-
-Let's look at the preview on the right for a moment and try to click on the button that says `counter is 0`. We'll notice that it doesn't work.
-
-In the code for `counter.js`, which you can find on the right, we have a `setupCounter` function responsible for initializing our counter app. However, a crucial component is missing: an event listener for the button.
-
-Event listeners are essential in web development as they enable our applications to respond to user actions. In this case, we need to listen for clicks on the button to increment the counter.
-
-To address this, we'll call the `addEventListener` to attach a `click` event listener to the button element. When a click is detected, we'll execute a callback function that increments the counter and updates the `innerHTML` accordingly.
-
-```ts add={9}
-export function setupCounter(element) {
-  let counter = 0;
-
-  const setCounter = (count) => {
-    counter = count;
-    element.innerHTML = `count is ${counter}`;
-  };
-
-  element.addEventListener('click', () => setCounter(counter + 1));
-
-  setCounter(0);
+```
+Error: spawn /home/tutorial/node_modules/open/xdg-open EACCES
+    at __node_internal_captureLargerStackTrace2 (https://httplocalhost4321-zfes.w-corp-staticblitz.com/builtins.5bf3667c.js:101:5335)
+    at __node_internal_errnoException2 (https://httplocalhost4321-zfes.w-corp-staticblitz.com/builtins.5bf3667c.js:101:6592)
+    at ChildProcess._handle.onexit (https://httplocalhost4321-zfes.w-corp-staticblitz.com/builtins.5bf3667c.js:52:3320)
+    at https://httplocalhost4321-zfes.w-corp-staticblitz.com/blitz.dc4d7514.js:40:964896
+    at _0x4fd871 (https://httplocalhost4321-zfes.w-corp-staticblitz.com/blitz.dc4d7514.js:40:508718)
+    at https://httplocalhost4321-zfes.w-corp-staticblitz.com/blitz.dc4d7514.js:40:508484 {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'spawn /home/tutorial/node_modules/open/xdg-open',
+  path: '/home/tutorial/node_modules/open/xdg-open',
+  spawnargs: [ 'http://127.0.0.1:4211/projects' ]
 }
+
+Node.js 18.20.3
 ```
 
-This gives you a sneak peak of the TutorialKit experience, demonstrating what it's capable of.
-
-Happy writing!
+If you run `nx graph --open=false` the graph will open correctly.

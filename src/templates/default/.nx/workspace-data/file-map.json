@@ -1,0 +1,76 @@
+{
+  "version": "6.0",
+  "nxVersion": "0.0.0-pr-22870-1e4b781",
+  "deps": {
+    "vite": "^5.2.0",
+    "nx": "0.0.0-pr-22870-1e4b781"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "vite-project": [
+        {
+          "file": ".nx/workspace-data/d/server-process.json",
+          "hash": "5792506992609090073"
+        },
+        {
+          "file": ".nx/workspace-data/file-map.json",
+          "hash": "8652334338174179085"
+        },
+        {
+          "file": ".nx/workspace-data/lockfile.hash",
+          "hash": "7535561590313155066"
+        },
+        {
+          "file": ".nx/workspace-data/parsed-lock-file.json",
+          "hash": "16273717445486101419"
+        },
+        {
+          "file": ".nx/workspace-data/project-graph.json",
+          "hash": "17904545707106620078"
+        },
+        {
+          "file": "counter.js",
+          "hash": "3719081165511868202"
+        },
+        {
+          "file": "index.html",
+          "hash": "15969147254172844500"
+        },
+        {
+          "file": "javascript.svg",
+          "hash": "17009221925664200232"
+        },
+        {
+          "file": "main.js",
+          "hash": "718572501800031644"
+        },
+        {
+          "file": "nx.json",
+          "hash": "2933536800231048536"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "3982474901355779318"
+        },
+        {
+          "file": "package.json",
+          "hash": "2250078099655281104",
+          "deps": [
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "style.css",
+          "hash": "13536789216630019211"
+        }
+      ]
+    }
+  }
+}

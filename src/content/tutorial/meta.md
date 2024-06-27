@@ -1,7 +1,6 @@
 ---
 type: tutorial
-title: Basics
-mainCommand: ['npm run dev', 'Starting http server']
+mainCommand: ['echo Hi', 'No main command']
 prepareCommands:
   - ['npm install', 'Installing dependencies']
 ---
